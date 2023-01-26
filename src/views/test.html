@@ -1,0 +1,55 @@
+<style>
+  .sticky-sidebar {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: 992px) {
+    .sticky-sidebar {
+      position: fixed;
+      top: 40px;
+    }
+  }
+</style>
+<script>
+  const sidebar = document.getElementById("sticky-sidebar");
+
+  function add(ele) {
+    ele.classList.add("sticky-sidebar");
+    console.log('added');
+  }
+  function remove(ele) {
+    ele.classList.remove("sticky-sidebar");
+    console.log('added');
+  }
+
+  window.addEventListener("scroll", () => {
+    const w = window.scrollY;
+    const h = document.body.scrollHeight - 1000;
+    // console.log({ w, h });
+
+    if (window.matchMedia("(max-width: 700px)").matches) {
+      // Viewport is less or equal to 700 pixels wide
+      return;
+    } else {
+      // Viewport is greater than 700 pixels wide
+      if (w > 1080 && w < h) {
+        add(sidebar);
+        setPosition();
+      } else {
+        setPosition();
+        remove(sidebar);
+      }
+    }
+  });
+
+
+  function setPosition() {
+    if (document.querySelector(".sticky-sidebar")) {
+      sidebar.style.left = sidebar.getBoundingClientRect().left + "px";
+    } else {
+      sidebar.style.left = "auto";
+    }
+  }
+</script>

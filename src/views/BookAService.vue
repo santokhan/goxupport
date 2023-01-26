@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="js">
 import Footer from '../components/footer/Footer.vue';
 import Header from '../components/header/Header.vue';
 import Others from '../components/others/Others.vue';
