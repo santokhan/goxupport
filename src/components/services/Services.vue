@@ -1,15 +1,16 @@
 <script setup>
-import paint from '../../assets/images/paint.jpg'
-import wifi from '../../assets/images/wifi.jpg'
-import it from '../../assets/images/it.jpg'
-import cctv from '../../assets/images/cctv.jpg'
-import cleaning from '../../assets/images/cleaning.jpg'
-import handyman from '../../assets/images/handyman.jpg'
-import fumigation from '../../assets/images/fumigation.jpg'
-import air from '../../assets/images/air.jpg'
-import electrical from '../../assets/images/electrical.jpg'
 import Image from './card/CImage.vue'
 import MTitle from '../layout/MTitle.vue'
+// 
+import paint from '../../assets/images/services/paint.jpg'
+import wifi from '../../assets/images/services/wifi.jpg'
+import it from '../../assets/images/services/it.jpg'
+import cctv from '../../assets/images/services/cctv.jpg'
+import cleaning from '../../assets/images/services/cleaning.jpg'
+import handyman from '../../assets/images/services/handyman.jpg'
+import fumigation from '../../assets/images/services/fumigation.jpg'
+import air from '../../assets/images/services/air.jpg'
+import electrical from '../../assets/images/services/electrical.jpg'
 </script>
 
 <template>

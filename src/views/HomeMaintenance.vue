@@ -6,8 +6,9 @@ import MainContainer from '../components/layout/MainContainer.vue';
 import MDesc from '../components/layout/MDesc.vue';
 import MTitle from '../components/layout/MTitle.vue';
 import SubTitle from '../components/layout/SubTitle.vue';
-import maintenance from '../assets/images/slider/1.jpg';
 import ContactForm from '../components/ContactForm.vue';
+// 
+import maintenance from '../assets/images/services/home-maintenance.jpg';
 </script>
 
 <template>
