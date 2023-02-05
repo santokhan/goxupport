@@ -12,6 +12,7 @@ import fumigation from '../../assets/images/services/fumigation.jpg'
 import air from '../../assets/images/services/air.jpg'
 import electrical from '../../assets/images/services/electrical.jpg'
 import plumbing from '../../assets/images/services/plumbing.jpg'
+import maintenance from '../../assets/images/services/home-maintenance.jpg'
 
 import Card from './card/Card.vue'
 
@@ -73,9 +74,15 @@ const otherStyles = "tw-rounded-xl py-4 px-4 tw-shadow tw-border-2 tw-border-gre
                </RouterLink>
             </Card>
             <Card>
-               <RouterLink class="tw-decoration-none" to="/services/Plumbing">
+               <RouterLink class="tw-decoration-none" to="/services/plumbing">
                   <Image :src="plumbing"></Image>
                   <div class="h5 py-3">Plumbing</div>
+               </RouterLink>
+            </Card>
+            <Card>
+               <RouterLink class="tw-decoration-none" to="/services/maintenance">
+                  <Image :src="maintenance"></Image>
+                  <div class="h5 py-3">Home Maintenance</div>
                </RouterLink>
             </Card>
          </div>

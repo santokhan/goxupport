@@ -7,25 +7,29 @@ import Header from '../components/header/Header.vue';
 <template>
     <Header></Header>
     <div class="">
-        <div>
-            <!-- <img class="tw-h-80 tw-w-full tw-object-cover" src="../assets/images/team.jpg" alt="team"> -->
-        </div>
         <section id="services" class="tw-py-10">
+            <div class="tw-flex tw-justify-center py-8">
+                <img class="tw-w-full tw-max-w-lg tw-object-contain" src="../assets/images/about.jpg" alt="team">
+            </div>
             <div class="container">
                 <div class="px-3 py-3 pb-md-4 mx-auto">
                     <div class="tw-text-3xl tw-font-medium mb-3">ABOUT COMPANY</div>
                     <div class="tw-text-gray-500">
-                        <p class="tw-text-justify ">GoXupport is your one-call solution for a wide
-                            range of home and office maintenance and repair needs.</p>
-                        <p class="tw-text-justify">
-                            Our technicians are highly skilled craftsmen with experience in the trades. We’re home
-                            repair
-                            and improvement experts, and we are known for the quality of our workmanship and
-                            professional
-                            reliability so you know the job will be done correctly and efficiently.
+                        <p class="tw-text-justify mt-3">
+                            GoXupport is your one-call solution for a wide range of home and
+                            office maintenance and repair needs.
                         </p>
-
-                        <ul class="tw-list-disc tw-px-5 tw-space-y-2 tw-py-8">
+                        <p class="tw-text-justify mt-3">
+                            Our technicians are highly skilled craftsmen with experience in the trades. We’re home
+                            repair and improvement experts, and we are known for the quality of our workmanship and
+                            professional reliability so you know the job will be done correctly and efficiently.
+                        </p>
+                        <p class="tw-text-justify mt-3">
+                            Our experienced repairmen work on a wide range of projects every single day—big and small!
+                            Just because you didn’t see a particular service on this page or elsewhere on the website
+                            doesn’t mean we can’t help you out
+                        </p>
+                        <ul class="tw-space-y-2 tw-py-8">
                             <li>Here are a few reasons why our customers recommend GoXupport to their friends.</li>
                             <li>One simple call provides easy scheduling</li>
                             <li>On time arrival</li>
