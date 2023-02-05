@@ -20,7 +20,7 @@ import maintenance from '../assets/images/services/home-maintenance.jpg';
         <div class="tw-py-0 lg:tw-py-4">
             <SubTitle>Repair, Install, Grout, Patch & More </SubTitle>
             <MDesc>
-                That's why regular maintenance in and around the home is especially important.
+                The little things add up. That's why regular maintenance in and around the home is especially important.
                 We are experts in Bathroom Maintenance, Garrage Maintenance, Kitchen Maintenance, Outdoor Maintenance,
                 etc. Let us tackle the small and large projects on your list
             </MDesc>
