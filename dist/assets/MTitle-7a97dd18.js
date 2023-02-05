@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{o,c as r,r as s}from"./index-ccaff5eb.js";const c={},n={class:"tw-text-2xl tw-font-bold tw-text-center tw-uppercase tw-mb-6"};function a(t,l){return o(),r("div",n,[s(t.$slots,"default")])}const d=e(c,[["render",a]]);export{d as M};

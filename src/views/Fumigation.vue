@@ -13,9 +13,13 @@ import fumigation from '../assets/images/services/fumigation.jpg'
 <template>
     <Header></Header>
     <MainContainer>
-        <MTitle>fumigation</MTitle>
+        <MTitle>fumigation services</MTitle>
         <IImage :src="fumigation"></IImage>
-        <MDesc></MDesc>
+        <MDesc>
+            We provide fumigation services for all types of residential properties. GoXupport also offers complete pest
+            control solutions for commercial properties including restaurants, warehouses, office buildings, daycare
+            centers and more.
+        </MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

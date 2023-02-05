@@ -12,26 +12,28 @@ import painting from '../../assets/images/join-card/paint.png'
 </script>
 
 <template>
-    <div class="tw-flex">
-        <JCard to="/">
-            <JImage :src="handy" />
-            <JTitle>Handyman</JTitle>
-        </JCard>
-        <JCard to="/services/plumbing">
-            <JImage :src="plumbing" />
-            <JTitle>plumbing</JTitle>
-        </JCard>
-        <JCard to="/services/electric">
-            <JImage :src="electric" />
-            <JTitle>electric</JTitle>
-        </JCard>
-        <JCard to="/services/fumigation">
-            <JImage :src="fumigation" />
-            <JTitle>fumigation</JTitle>
-        </JCard>
-        <JCard to="/services/painting">
-            <JImage :src="painting" />
-            <JTitle>painting</JTitle>
-        </JCard>
+    <div class="">
+        <div class="tw-w-full tw-flex tw-overflow-x-auto">
+            <JCard to="/services/it-service">
+                <JImage :src="handy" />
+                <JTitle>IT services</JTitle>
+            </JCard>
+            <JCard to="/services/plumbing">
+                <JImage :src="plumbing" />
+                <JTitle>plumbing services</JTitle>
+            </JCard>
+            <JCard to="/services/electrical">
+                <JImage :src="electric" />
+                <JTitle>electrical services</JTitle>
+            </JCard>
+            <JCard to="/services/fumigation">
+                <JImage :src="fumigation" />
+                <JTitle>fumigation services</JTitle>
+            </JCard>
+            <JCard to="/services/painting">
+                <JImage :src="painting" />
+                <JTitle>painting services</JTitle>
+            </JCard>
+        </div>
     </div>
 </template>
