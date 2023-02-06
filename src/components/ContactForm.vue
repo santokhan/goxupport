@@ -7,6 +7,7 @@ const data = reactive({
     firstname: "",
     lastname: "",
     email: "",
+    phone: "",
     state: "",
     location: "",
     message: ""
@@ -15,9 +16,9 @@ const data = reactive({
 const url = "https://formspree.io/f/mqkoerd"
 
 function handleSubmit2() {
-    const { firstname, lastname, email, state, location, message } = data;
+    const { firstname, lastname, email, phone, state, location, message } = data;
 
-    console.log(JSON.stringify({ firstname, lastname, email, state, location, message }));
+    console.log(JSON.stringify({ firstname, lastname, email, phone, state, location, message }));
 
     fetch(url, {
         method: 'POST', // Specify the request method 
@@ -26,6 +27,7 @@ function handleSubmit2() {
             firstname: firstname,
             lastname: lastname,
             email: email,
+            phone: phone,
             state: state,
             location: location, message: message
         }) // Convert the request body to a JSON string
@@ -88,14 +90,21 @@ function handleSubmit() {
                                                 placeholder="customer@goxupport.com" required="" v-model="data.email">
                                         </div>
                                         <div class="tw-w-full tw-mb-8">
+                                            <label for="phone"
+                                                class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-textgray">Phone</label>
+                                            <input type="text" id="phone"
+                                                class="tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 tw-text-sm tw-rounded-lg focus:tw-ring-green-700 focus:tw-border-green-700 tw-block tw-w-full tw-p-2.5"
+                                                placeholder="phone" required="" v-model="data.phone">
+                                        </div>
+                                    </div>
+                                    <div class="tw-flex tw-flex-wrap lg:tw-flex-nowrap lg:tw-gap-8">
+                                        <div class="tw-w-full tw-mb-8">
                                             <label for="state"
                                                 class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-textgray">State</label>
                                             <input type="text" id="state"
                                                 class="tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 tw-text-sm tw-rounded-lg focus:tw-ring-green-700 focus:tw-border-green-700 tw-block tw-w-full tw-p-2.5"
                                                 placeholder="State" required="" v-model="data.state">
                                         </div>
-                                    </div>
-                                    <div class="tw-flex tw-flex-wrap lg:tw-flex-nowrap lg:tw-gap-8">
                                         <div class="tw-w-full tw-mb-8">
                                             <label for="location"
                                                 class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-textgray">Location</label>
