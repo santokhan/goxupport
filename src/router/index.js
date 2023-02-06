@@ -38,7 +38,7 @@ const services = [{
 {
   path: "/services/cctv",
   name: "cctv",
-  component: () => import("../views/AirCondition.vue"),
+  component: () => import("../views/CCTV.vue"),
 },
 {
   path: "/services/it-service",
@@ -58,7 +58,7 @@ const services = [{
 {
   path: "/services/general-cleaning",
   name: "general-cleaning",
-  component: () => import("../views/ITService.vue"),
+  component: () => import("../views/GeneralCleaning.vue"),
 },
 ]
 

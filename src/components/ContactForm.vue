@@ -11,22 +11,34 @@ const data = reactive({
     message: ""
 });
 
-async function handleSubmit() {
+function handleSubmit2() {
     const { firstname, lastname, email, state, location, message } = data;
 
     console.log(JSON.stringify({ firstname, lastname, email, state, location, message }));
 
-    await fetch("https://formspree.io/f/mqkoerd", {
+    fetch("https://formspree.io/f/mqkoerd", {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ firstname: "data", lastname: "structure", email: "s@gmailc" }),
-    }).then(res => {
-        console.log(res);
-    }).catch(err => {
+        body: JSON.stringify({
+            firstname: firstname,
+            lastname: lastname,
+            email: email,
+            state: state,
+            location: location, message: message
+        }),
+    }).then(res => res).catch(err => {
         console.log(err);
     })
+}
+
+function handleSubmit() {
+    fetch('https://formspree.io/f/mqkoerd', {
+        method: 'POST', // Specify the request method
+        headers: { 'Content-Type': 'application/json' }, // Set the request headers
+        body: JSON.stringify({ key: 'value' }) // Convert the request body to a JSON string
+    })
+        .then(response => response.json()) // Parse the response as JSON
+        .then(data => console.log(data)) // Log the response data
+        .catch(error => console.error(error)); // Log any errors that occur
 }
 </script>
 
