@@ -27,7 +27,7 @@ import Header from '../components/header/Header.vue';
             </div>
             <ContactForm></ContactForm>
         </div>
-        <iframe class="tw-w-full"
+        <iframe class="tw-w-full tw-hidden"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.638470198207!2d3.5703682154079193!3d6.440451425908467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf7784b6ada69%3A0x9f5d8889fc421ed3!2sOba%20Elegushi%20Housing%20Estate!5e0!3m2!1sen!2sbd!4v1673968196395!5m2!1sen!2sbd"
             height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
