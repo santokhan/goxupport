@@ -5,6 +5,9 @@ import MainContainer from '../components/layout/MainContainer.vue';
 import Footer from '../components/footer/Footer.vue';
 import Header from '../components/header/Header.vue';
 
+
+const submitted = reactive({ value: false });
+
 const data = reactive({
     firstname: "",
     lastname: "",
@@ -33,7 +36,12 @@ async function handleSubmit() {
             message: data.message
         }) // Convert the request body to a JSON string
     })
-        .then(response => response.json()) // Parse the response as JSON
+        .then(response => {
+            if (response.status === 200) {
+                submitted.value = true;
+            }
+            return response.json()
+        }) // Parse the response as JSON
         .catch(error => console.error(error)); // Log any errors that occur
 }
 </script>
@@ -43,7 +51,7 @@ async function handleSubmit() {
     <Header></Header>
     <div class="tw-bg-green-50">
         <MainContainer>
-            <section class="tw-relative">
+            <section class="tw-relative" v-if="!submitted.value">
                 <div class="tw-py-8 lg:tw-py-16 tw-relative">
                     <div class="max-w-7xl mx-auto p-4">
                         <div
@@ -56,8 +64,8 @@ async function handleSubmit() {
                             </div>
                             <hr />
                             <div class="tw-w-full tw-p-6 lg:tw-p-10 tw-max-w-2xl mx-auto">
-                                <form @submit="(e) => {
-                                    e.preventDefault();
+                                <form @submit.prevent="() => {
+                                    // e.preventDefault();
                                     handleSubmit();
                                 }">
                                     <div class="tw-flex tw-flex-wrap lg:tw-flex-nowrap lg:tw-gap-8">
@@ -127,6 +135,13 @@ async function handleSubmit() {
                     </div>
                 </div>
             </section>
+
+            <div class="tw-flex tw-justify-center" v-else>
+                <div class="tw-p-4 tw-text-sm tw-text-green-800 tw-rounded-lg tw-bg-white" role="alert">
+                    <span class="tw-font-medium"><i class="fa fa-check pr-1"></i> Success alert:</span> Form data was
+                    submitted successfully.
+                </div>
+            </div>
         </MainContainer>
     </div>
     <Footer></Footer>
