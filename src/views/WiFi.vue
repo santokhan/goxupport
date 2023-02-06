@@ -14,7 +14,7 @@ import wifi from '../assets/images/services/wifi.jpg'
     <MainContainer>
         <MTitle>WiFi INSTALLATION</MTitle>
         <IImage :src="wifi"></IImage>
-        <MDesc>We provide the installation of wifi for homes and businesses. This means you have your properties under proper security surveillance.</MDesc>
+        <MDesc>We Install Wi-Fi internet and wireless devices for home and offices</MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

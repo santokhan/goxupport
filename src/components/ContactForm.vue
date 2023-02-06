@@ -108,9 +108,9 @@ function handleSubmit() {
                                     <div>
                                         <label for="message"
                                             class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-textgray">Your
-                                            message</label><textarea id="message" rows="6"
+                                            Message</label><textarea id="message" rows="6"
                                             class="tw-block tw-p-2.5 tw-w-full tw-text-sm tw-text-gray-900 tw-bg-gray-50 tw-rounded-lg tw-border tw-border-gray-300 focus:tw-ring-green-700 focus:tw-border-green-700"
-                                            placeholder="Write your thoughts here..." v-model="data.message"></textarea>
+                                            placeholder="Description" v-model="data.message"></textarea>
                                     </div>
                                     <div class="tw-flex tw-justify-end tw-w-full tw-mt-8"><button type="submit"
                                             class="tw-text-white tw-bg-green-700 hover:tw-brightness-90 focus:tw-ring-4 focus:tw-outline-none focus:tw-ring-green-900 tw-font-medium tw-rounded-lg tw-text-sm tw-w-full sm:tw-w-auto tw-px-5 tw-py-2.5 tw-text-center">Submit</button>

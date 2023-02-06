@@ -15,7 +15,10 @@ import painting from '../assets/images/services/paint.jpg';
     <MainContainer>
         <MTitle>Painting</MTitle>
         <IIimage :src="painting"></IIimage>
-        <MDesc>Book top notch painters and get awesome and beatifully crafted painting jobs done for your need at</MDesc>
+        <MDesc>Transform your space with our professional painting services. Our team of skilled painters will bring new
+            life to your walls, giving you a refreshed and revitalized look. From color consultations to the final coat,
+            we handle every aspect of the job to ensure a flawless finish. Our commitment to quality and customer
+            satisfaction sets us apart. Contact us today to schedule your next painting project.</MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

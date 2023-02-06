@@ -15,7 +15,12 @@ import ac from '../../assets/images/more-services/disposal.jpg'
     <MainContainer>
         <MTitle>Sewage disposal</MTitle>
         <IImage :src="ac"></IImage>
-        <MDesc>We provide you with the procurement, installation and maintenance of your Sewage disposal.</MDesc>
+        <MDesc>Protect your community with our reliable sewage disposal services. Our team of experts specializes in
+            efficient and eco-friendly waste management solutions. From residential septic systems to large-scale
+            commercial treatment plants, we have the expertise to handle any project. We understand the importance of
+            proper disposal of sewage to maintain a healthy and safe environment, that's why we are dedicated to
+            providing our customers with the best services available. Contact us today for all your sewage disposal
+            needs.</MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

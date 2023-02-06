@@ -9,7 +9,7 @@
     </swiper-slide>
     <swiper-slide>
       <Container :css="'slide-2'">
-        <STitle>Bathrooms are a hub of activity. Our bathroom repair solutions cover all the basess</STitle>
+        <STitle>Bathrooms are a hub of activity. Our bathroom repair solutions cover all the bases</STitle>
         <Buttons></Buttons>
       </Container>
     </swiper-slide>
