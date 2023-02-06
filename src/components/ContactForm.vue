@@ -13,33 +13,26 @@ const data = reactive({
     message: ""
 });
 
-const url = "https://formspree.io/f/mqkoerd"
+const urlCustomer = "https://formspree.io/f/mqkoerdy";
 
-function handleSubmit2() {
-    const { firstname, lastname, email, phone, state, location, message } = data;
-
-    console.log(JSON.stringify({ firstname, lastname, email, phone, state, location, message }));
-
-    fetch(url, {
+async function handleSubmit() {
+    await fetch(urlCustomer, {
         method: 'POST', // Specify the request method 
-        headers: { 'Content-Type': 'application/json' }, // Set the request headers
+        headers: {
+            "Content-type": "application/json; charset=UTF-8",
+        }, // Set the request headers
         body: JSON.stringify({
-            firstname: firstname,
-            lastname: lastname,
-            email: email,
-            phone: phone,
-            state: state,
-            location: location, message: message
+            firstname: data.firstname,
+            lastname: data.lastname,
+            email: data.email,
+            phone: data.phone,
+            state: data.state,
+            location: data.location,
+            message: data.message
         }) // Convert the request body to a JSON string
     })
         .then(response => response.json()) // Parse the response as JSON
-        .then(data => console.log(data)) // Log the response data
         .catch(error => console.error(error)); // Log any errors that occur
-}
-
-function handleSubmit() {
-    axios.post(url, data)
-
 }
 </script>
 
