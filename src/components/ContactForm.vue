@@ -1,6 +1,7 @@
 <script setup>
 import { reactive } from 'vue';
 import MainContainer from './layout/MainContainer.vue';
+import axios from 'axios';
 
 const data = reactive({
     firstname: "",
@@ -11,34 +12,32 @@ const data = reactive({
     message: ""
 });
 
+const url = "https://formspree.io/f/mqkoerd"
+
 function handleSubmit2() {
     const { firstname, lastname, email, state, location, message } = data;
 
     console.log(JSON.stringify({ firstname, lastname, email, state, location, message }));
 
-    fetch("https://formspree.io/f/mqkoerd", {
-        method: 'POST',
+    fetch(url, {
+        method: 'POST', // Specify the request method 
+        headers: { 'Content-Type': 'application/json' }, // Set the request headers
         body: JSON.stringify({
             firstname: firstname,
             lastname: lastname,
             email: email,
             state: state,
             location: location, message: message
-        }),
-    }).then(res => res).catch(err => {
-        console.log(err);
-    })
-}
-
-function handleSubmit() {
-    fetch('https://formspree.io/f/mqkoerd', {
-        method: 'POST', // Specify the request method
-        headers: { 'Content-Type': 'application/json' }, // Set the request headers
-        body: JSON.stringify({ key: 'value' }) // Convert the request body to a JSON string
+        }) // Convert the request body to a JSON string
     })
         .then(response => response.json()) // Parse the response as JSON
         .then(data => console.log(data)) // Log the response data
         .catch(error => console.error(error)); // Log any errors that occur
+}
+
+function handleSubmit() {
+    axios.post(url, data)
+
 }
 </script>
 
