@@ -28,11 +28,6 @@ body.hide-scroll {
     box-sizing: border-box
 }
 
-a {
-    color: #171b24;
-    text-decoration: none
-}
-
 input {
     outline: 0;
     box-shadow: none;
