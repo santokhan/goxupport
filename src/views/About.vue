@@ -29,16 +29,16 @@ import Header from '../components/header/Header.vue';
                             Just because you didn’t see a particular service on this page or elsewhere on the website
                             doesn’t mean we can’t help you out
                         </p>
-                        <ul class="tw-space-y-2 tw-py-8 tw-list-disc px-4">
-                            <li>Here are a few reasons why our customers recommend GoXupport to their friends.</li>
-                            <li>One simple call provides easy scheduling</li>
-                            <li>On time arrival</li>
-                            <li>Job is done right the first time</li>
-                            <li>Wide variety of repair, maintenance and improvements services</li>
-                            <li>Technicians are experienced</li>
-                            <li>We promise to clean up when we’re done</li>
-                            <li>Our quality workmanship is guaranteed</li>
-                        </ul>
+                        <div class="tw-space-y-2 tw-py-8">
+                            <div>Here are a few reasons why our customers recommend GoXupport to their friends.</div>
+                            <div>One simple call provides easy scheduling</div>
+                            <div>On time arrival</div>
+                            <div>Job is done right the first time</div>
+                            <div>Wide variety of repair, maintenance and improvements services</div>
+                            <div>Technicians are experienced</div>
+                            <div>We promise to clean up when we’re done</div>
+                            <div>Our quality workmanship is guaranteed</div>
+                        </div>
                     </div>
                     <!-- <img class="tw-rounded-xl" src="../assets/images/staff.jpg" width="100%"> -->
                 </div>
