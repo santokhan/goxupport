@@ -13,10 +13,15 @@ import electric from '../assets/images/services/electrical.jpg'
 <template>
     <Header></Header>
     <MainContainer>
-        <MTitle>Eletrical Repair</MTitle>
+        <MTitle>Electrical Services</MTitle>
         <IImage :src="electric"></IImage>
-        <MDesc>When small electric repairs make you feel like you’re in over your head, call the pros at GoXupport . We can help you with things like, putting in some new outlets and wiring your
-            lights or ceiling fans</MDesc>
+        <MDesc>
+            At GoXupport, we understand the importance of reliable and safe electrical service. Our team of certified
+            electricians is dedicated to providing top-notch electrical solutions to both residential and commercial
+            customers. From new installations to upgrades and repairs, we are equipped to handle all your electrical
+            needs. Our focus on safety and customer satisfaction sets us apart from the competition. Contact us today to
+            schedule an appointment and experience the peace of mind that comes with professional electrical service.
+        </MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

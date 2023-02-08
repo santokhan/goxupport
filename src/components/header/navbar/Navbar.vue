@@ -15,7 +15,7 @@ const handleDrop = () => { dropdown.value = dropdown.value ? false : true }
 
 <template>
     <div class="tw-bg-green-800 text-white tw-relative">
-        <nav class="tw-flex tw-justify-between tw-items-center tw-max-w-6xl mx-auto px-4 tw-relative">
+        <nav class="tw-flex tw-justify-between tw-items-center  mx-auto px-4 tw-relative">
             <Logo></Logo>
             <button
                 class="tw-inline-flex text-xl lg:tw-hidden tw-items-center tw-p-2 tw-ml-3 tw-text-gray-100 tw-rounded-lg hover:tw-text-gray-900 hover:tw-bg-gray-100 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-gray-200 "

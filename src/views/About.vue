@@ -29,7 +29,7 @@ import Header from '../components/header/Header.vue';
                             Just because you didn’t see a particular service on this page or elsewhere on the website
                             doesn’t mean we can’t help you out
                         </p>
-                        <ul class="tw-space-y-2 tw-py-8">
+                        <ul class="tw-space-y-2 tw-py-8 tw-list-disc px-4">
                             <li>Here are a few reasons why our customers recommend GoXupport to their friends.</li>
                             <li>One simple call provides easy scheduling</li>
                             <li>On time arrival</li>
