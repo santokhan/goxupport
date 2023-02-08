@@ -15,7 +15,9 @@ import ac from '../../assets/images/more-services/curtains.jpg'
     <MainContainer>
         <MTitle>Curtains & Blinds</MTitle>
         <IImage :src="ac"></IImage>
-        <MDesc>We provide you with the procurement, installation and maintenance of your Curtains & Blinds.</MDesc>
+        <MDesc>Curtains add a touch of elegance and sophistication to any room. We offer professional and efficient
+            curtain installation to make your home or office look stunning. Our experts have years of experience and
+            have the necessary tools to ensure that your curtains are hung perfectly.</MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>
