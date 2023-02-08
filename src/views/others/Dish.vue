@@ -15,7 +15,10 @@ import ac from '../../assets/images/more-services/dish.jpg'
     <MainContainer>
         <MTitle>Dish Installation</MTitle>
         <IImage :src="ac"></IImage>
-        <MDesc>We provide you with the procurement, installation and maintenance of your Dish</MDesc>
+        <MDesc>Get Professional Dish Installation Services with a Personal Touch
+            At <b>GoXupport</b> , we believe that every home deserves access to quality entertainment and communication
+            services. That's why we offer expert dish installation services to help you get the most out of your TV and
+            internet experience.</MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

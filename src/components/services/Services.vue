@@ -89,7 +89,6 @@ const otherStyles = "tw-rounded-xl py-4 px-4 tw-shadow tw-border-2 tw-border-gre
          <div class="row text-center py-5 tw-justify-center">
             <div class="">
                <img class="mx-auto" src="../../assets/images/services/handyman.png" alt="services-icon" width="50%">
-
                <MTitle>MORE SERVICES</MTitle>
                <div
                   class="tw-w-full tw-p-4 tw-grid tw-grid-cols-2 lg:tw-grid-cols-3 tw-flex-wrap tw-justify-center text-xl tw-font-medium py-3 tw-gap-5">
@@ -101,7 +100,7 @@ const otherStyles = "tw-rounded-xl py-4 px-4 tw-shadow tw-border-2 tw-border-gre
                   <RouterLink :class="otherStyles" to="/services/window">Window Repair</RouterLink>
                   <RouterLink :class="otherStyles" to="/services/curtains">Curtains & Blinds</RouterLink>
                   <RouterLink :class="otherStyles" to="/services/tiles">Tiles Repair & Installation</RouterLink>
-                  <RouterLink :class="otherStyles" to="/services/handrail">Handrail Repair</RouterLink>
+                  <RouterLink :class="otherStyles" to="/services/handrail">Handrail Repair & Installation</RouterLink>
                </div>
             </div>
          </div>

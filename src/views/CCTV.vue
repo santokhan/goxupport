@@ -15,7 +15,13 @@ import cctv from '../assets/images/services/cctv.jpg'
     <MainContainer>
         <MTitle>CCTV Installation</MTitle>
         <IImage :src="cctv"></IImage>
-        <MDesc>We provide the installation of cctv for homes and businesses. This means you have your properties under proper security surveillance.</MDesc>
+        <MDesc>
+            Protect your property with professional CCTV camera installation services. Our experienced technicians
+            will help you choose the right cameras for your needs and expertly install them for optimal coverage and
+            performance. With state-of-the-art technology and 24/7 monitoring capabilities, you can have peace of mind
+            knowing that your property is secure. Contact us today for consultation and take the first step in securing
+            your property.
+        </MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

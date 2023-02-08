@@ -25,7 +25,7 @@ import Header from '../components/header/Header.vue';
                             professional reliability so you know the job will be done correctly and efficiently.
                         </p>
                         <p class="tw-text-justify mt-3">
-                            Our experienced repairmen work on a wide range of projects every single day—big and small!
+                            Our experienced handymen work on a wide range of projects every single day—big and small!
                             Just because you didn’t see a particular service on this page or elsewhere on the website
                             doesn’t mean we can’t help you out
                         </p>

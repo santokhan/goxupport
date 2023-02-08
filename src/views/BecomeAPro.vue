@@ -59,8 +59,12 @@ async function handleSubmit() {
                             <!-- <div
                                 class="lg:tw-max-w-sm tw-w-full tw-p-6 lg:tw-p-10 bg-[#3E2093] tw-rounded-2xl tw-text-white tw-flex tw-flex-col tw-relative tw-overflow-hidden tw-bg-office">
                             </div> -->
-                            <div class="tw-text-3xl tw-text-gray-xl tw-text-center tw-my-4 tw-font-medium tw-pb-2">
-                                Request Service
+                            <div class="tw-text-3xl tw-text-gray-900 tw-text-center tw-my-4 tw-font-medium tw-pb-2">
+                                Become a Pro with GoXupport
+                                <div class="tw-text-xl tw-text-gray-500 tw-text-center tw-font-medium mt-3 tw-pb-2">
+                                    Join our team of professionals. Gain access to jobs that match your skills and earn
+                                    more
+                                </div>
                             </div>
                             <hr />
                             <div class="tw-w-full tw-p-6 lg:tw-p-10 tw-max-w-2xl mx-auto">

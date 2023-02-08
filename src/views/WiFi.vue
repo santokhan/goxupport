@@ -14,7 +14,12 @@ import wifi from '../assets/images/services/wifi.jpg'
     <MainContainer>
         <MTitle>WiFi INSTALLATION</MTitle>
         <IImage :src="wifi"></IImage>
-        <MDesc>We Install Wi-Fi internet and wireless devices for home and offices</MDesc>
+        <!-- <MDesc>We Install Wi-Fi internet and wireless devices for home and offices</MDesc> -->
+        <MDesc>Enjoy fast Wi-Fi speeds with our state-of-the-art service. Whether you're streaming, browsing, or
+            working, our reliable network will keep you connected at all times. Experience seamless connectivity with
+            our easy-to-use network, available 24/7. Say goodbye to buffering and slow load times, and say hello to
+            smooth and efficient internet service. Sign up today and join the millions of satisfied customers already
+            connected to our Wi-Fi network.</MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

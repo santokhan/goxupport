@@ -15,7 +15,13 @@ import ac from '../../assets/images/more-services/handrail.jpg'
     <MainContainer>
         <MTitle>Handrail Repair</MTitle>
         <IImage :src="ac"></IImage>
-        <MDesc>We provide you with the procurement, installation and maintenance of your Handrail</MDesc>
+        <MDesc>
+            Trust our experts for all your handrail installation and repair needs. Our team has extensive experience
+            in both residential and commercial properties, ensuring the highest quality of workmanship and safety
+            standards. Whether you need handrails installed for the first time or existing handrails fixed, we are here
+            to help. With our commitment to customer satisfaction, you can count on us to provide fast and efficient
+            service at an affordable price. Contact us today to schedule your handrail installation or repair service!
+        </MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>

@@ -13,9 +13,15 @@ import ac from '../assets/images/services/air.jpg'
 <template>
     <Header></Header>
     <MainContainer>
-        <MTitle>AIR CONDITIONERS INSTALLATION & REPAIR</MTitle>
+        <MTitle>Air conditioners Installation & Repair</MTitle>
         <IImage :src="ac"></IImage>
-        <MDesc>We provide you with the procurement, installation and maintenance of your air conditioners.</MDesc>
+        <MDesc>
+            For all your air conditioning needs, look no further. Our team of experts specializes in installation and
+            repair of air conditioners. Whether you need a new system installed or your current one fixed, we've got you
+            covered. With years of experience and the latest technology, we ensure that your space stays comfortable and
+            cool. Contact us today to schedule a consultation and receive top-notch service. Your satisfaction is our
+            top priority.
+        </MDesc>
     </MainContainer>
     <ContactForm></ContactForm>
     <Footer></Footer>
